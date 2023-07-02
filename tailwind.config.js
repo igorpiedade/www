@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         body: 'var(--font-body)',
         navMenu: 'var(--font-nav)',
+        logo: 'var(--font-logo)',
       },
     },
   },

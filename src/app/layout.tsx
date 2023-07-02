@@ -2,7 +2,12 @@ import './globals.css'
 import { ReactNode } from 'react'
 import Header from './components/Header'
 
-import { Bitter, Roboto_Flex as RobotoFlex } from 'next/font/google'
+import {
+  Bitter,
+  Roboto_Flex as RobotoFlex,
+  Bebas_Neue as BebasNeue,
+} from 'next/font/google'
+
 const fontBody = RobotoFlex({
   subsets: ['latin'],
   variable: '--font-body',
@@ -11,6 +16,12 @@ const fontNavMenu = Bitter({
   subsets: ['latin'],
   weight: ['300'],
   variable: '--font-nav',
+})
+
+const logo = BebasNeue({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-logo',
 })
 
 export const metadata = {
@@ -22,7 +33,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={`${fontBody.variable} ${fontNavMenu.variable} font-body`}
+        className={`${fontBody.variable} ${fontNavMenu.variable} ${logo.variable} font-body`}
       >
         <Header />
         {children}
