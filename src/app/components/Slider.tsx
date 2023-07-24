@@ -2,41 +2,19 @@
 
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-export default function Slider() {
-  const slides = [
-    {
-      id: 1,
-      img: 'img 1',
-    },
-    {
-      id: 2,
-      img: 'img 2',
-    },
-    {
-      id: 3,
-      img: 'img 3',
-    },
-    {
-      id: 4,
-      img: 'img 4',
-    },
-    {
-      id: 5,
-      img: 'img 5',
-    },
-    {
-      id: 6,
-      img: 'img 6',
-    },
-  ]
+interface slideType {
+  id: number
+  img: string
+}
 
+export default function Slider({ slides }: any) {
   const slideLeft = () => {
-    const scrollSlider = document.getElementById('slider')
+    const scrollSlider: any = document.getElementById('slider')
     scrollSlider.scrollLeft = scrollSlider.scrollLeft - 320
   }
 
   const slideRight = () => {
-    const scrollSlider = document.getElementById('slider')
+    const scrollSlider: any = document.getElementById('slider')
     scrollSlider.scrollLeft = scrollSlider?.scrollLeft + 320
   }
 
@@ -49,12 +27,12 @@ export default function Slider() {
       />
       <div
         id="slider"
-        className="scroll h-full w-full overflow-x-scroll scroll-smooth whitespace-nowrap p-4 scrollbar-hide"
+        className="scroll flex h-full w-full overflow-x-scroll scroll-smooth whitespace-nowrap p-4 scrollbar-hide"
       >
-        {slides.map((slide) => (
+        {slides.map((slide: slideType) => (
           <div
             key={slide.id}
-            className="m-2 inline-block h-80 w-72 cursor-pointer items-center justify-center rounded-2xl bg-purple-700 p-2 grayscale duration-300 ease-in-out hover:scale-110 hover:grayscale-0"
+            className="m-2 flex h-80 w-72 shrink-0 cursor-pointer snap-center items-center justify-center rounded-2xl bg-purple-700 p-2 grayscale duration-300 ease-in-out hover:scale-110 hover:grayscale-0"
           >
             {slide.img}
           </div>

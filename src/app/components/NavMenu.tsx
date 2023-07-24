@@ -6,16 +6,13 @@ export default function NavMenu() {
           <a href="#">Hello</a>
         </li>
         <li className="px-5 hover:text-slate-400">
-          <a href="#">Stack</a>
+          <a href="#">About me</a>
         </li>
         <li className="px-5 hover:text-slate-400">
           <a href="#">Portifolio</a>
         </li>
         <li className="px-5 hover:text-slate-400">
-          <a href="#">Careear Path</a>
-        </li>
-        <li className="px-5 hover:text-slate-400">
-          <a href="#">Contact</a>
+          <a href="#">Stack</a>
         </li>
       </ul>
     </nav>

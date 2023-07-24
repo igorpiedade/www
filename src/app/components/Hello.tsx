@@ -5,7 +5,10 @@ const myPhotoAlt: string = 'sample alt'
 
 export default function Hello() {
   return (
-    <div className="top-0 flex h-96 w-screen place-content-center bg-gradient-to-tl from-slate-800 to-zinc-950 text-slate-200">
+    <div
+      id="Hello"
+      className=" mt-16 flex h-96 w-screen place-content-center bg-gradient-to-tl from-slate-800 to-zinc-950 text-slate-200"
+    >
       <div className="flex w-screen max-w-7xl place-content-center items-center gap-x-20">
         <Image src={myPhoto} alt={myPhotoAlt} width={250} className="-mt-9" />
 

@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body
-        className={`${fontBody.variable} ${fontNavMenu.variable} ${logo.variable} font-body`}
+        className={`${fontBody.variable} ${fontNavMenu.variable} ${logo.variable} overflow-x-hidden font-body`}
       >
         <Header />
         {children}

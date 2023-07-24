@@ -1,3 +1,4 @@
+import Footer from './components/Footer'
 import Hello from './components/Hello'
 import Portifolio from './components/Portifolio'
 import Profile from './components/Profile'
@@ -10,6 +11,7 @@ export default function Home() {
       <Profile />
       <Portifolio />
       <FullStack />
+      <Footer />
     </div>
   )
 }

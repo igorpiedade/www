@@ -1,7 +1,3 @@
-import Image from 'next/image'
-import ProgrammerGif from '../../../public/assets/programmer.gif'
-import autoprefixer from 'autoprefixer'
-
 export default function Profile() {
   return (
     <div className="mt-8 flex w-screen place-content-center ">
