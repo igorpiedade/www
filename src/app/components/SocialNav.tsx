@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Github } from 'lucide-react'
+import { Instagram, Linkedin, Github, Mail } from 'lucide-react'
 
 export default function SocialNav() {
   return (
@@ -16,6 +16,11 @@ export default function SocialNav() {
       <li className="m-2 flex h-8 w-8 items-center justify-center rounded-full bg-slate-300 hover:bg-gradient-to-tr hover:from-yellow-600 hover:to-slate-100 ">
         <a href="https://github.com/igorpiedade">
           <Github color="black" />
+        </a>
+      </li>
+      <li className="m-2 flex h-8 w-8 items-center justify-center rounded-full bg-slate-300 hover:bg-gradient-to-tr hover:from-yellow-600 hover:to-slate-100 ">
+        <a href="mailto:igor@piedade.live">
+          <Mail color="black" />
         </a>
       </li>
     </ul>
