@@ -1,5 +1,9 @@
 import Slider from './Slider'
 
+import spacetimeCard from '../../../public/assets/spacetime_card.png'
+import spacetimeMobileCard from '../../../public/assets/spacetimeMobile_card.png'
+import spacetimeAPICard from '../../../public/assets/spacetimeAPI_card.png'
+
 export default function Portifolio() {
   const slidesArray: {
     id: number
@@ -7,27 +11,21 @@ export default function Portifolio() {
   } = [
     {
       id: 1,
-      img: 'img 1',
+      img: spacetimeCard,
+      alt: 'spacetime sample image',
+      link: 'https://github.com/igorpiedade/spacetime_web',
     },
     {
       id: 2,
-      img: 'img 2',
+      img: spacetimeMobileCard,
+      alt: 'spacetime mobile sample image',
+      link: 'https://github.com/igorpiedade/spacetime_mobile',
     },
     {
       id: 3,
-      img: 'img 3',
-    },
-    {
-      id: 4,
-      img: 'img 4',
-    },
-    {
-      id: 5,
-      img: 'img 5',
-    },
-    {
-      id: 6,
-      img: 'img 6',
+      img: spacetimeAPICard,
+      alt: 'spacetime API sample image',
+      link: 'https://github.com/igorpiedade/spacetime_api',
     },
   ]
 

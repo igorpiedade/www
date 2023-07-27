@@ -1,5 +1,5 @@
 import Logo from './Logo'
-import NavMenu from './NavMenu'
+// import NavMenu from './NavMenu'
 import SocialNav from './SocialNav'
 
 export default function Header() {
