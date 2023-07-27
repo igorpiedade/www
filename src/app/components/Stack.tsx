@@ -6,6 +6,10 @@ import nestjsIcon from '../../../public/assets/nestjs.svg'
 import prismaIcon from '../../../public/assets/prismaio.svg'
 import nextjsIcon from '../../../public/assets/nextjs.svg'
 import typescriptIcon from '../../../public/assets/typescript.svg'
+import nodejsIcon from '../../../public/assets/Nodejs.svg'
+import postgreIcon from '../../../public/assets/Postgresql.svg'
+import expoIcon from '../../../public/assets/expo.svg'
+import jestIcon from '../../../public/assets/jest-js-icon.svg'
 
 export default function Stack() {
   return (
@@ -16,11 +20,15 @@ export default function Stack() {
         </h1>
         <div className="m-10 grid grid-cols-6 place-items-center gap-4">
           <TechCard icon={javascriptIcon} caption="Javascript" />
+          <TechCard icon={nodejsIcon} caption="Node.JS" />
           <TechCard icon={reactIcon} caption="React.JS" />
-          <TechCard icon={nextjsIcon} caption="Next.JS" />
           <TechCard icon={typescriptIcon} caption="Typescript" />
+          <TechCard icon={nextjsIcon} caption="Next.JS" />
           <TechCard icon={nestjsIcon} caption="Nest.JS" />
           <TechCard icon={prismaIcon} caption="Prisma.IO" />
+          <TechCard icon={postgreIcon} caption="PostgreSQL" />
+          <TechCard icon={expoIcon} caption="Expo" />
+          <TechCard icon={jestIcon} caption="Jest" />
         </div>
       </div>
     </div>
