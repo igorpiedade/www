@@ -3,12 +3,17 @@ import Slider from './Slider'
 import spacetimeCard from '../../../public/assets/spacetime_card.png'
 import spacetimeMobileCard from '../../../public/assets/spacetimeMobile_card.png'
 import spacetimeAPICard from '../../../public/assets/spacetimeAPI_card.png'
+import { StaticImageData } from 'next/image'
+
+type slidesProp = {
+  id: number
+  img: StaticImageData
+  alt: string
+  link: string
+}[]
 
 export default function Portifolio() {
-  const slidesArray: {
-    id: number
-    img: string
-  } = [
+  const slidesArray: slidesProp = [
     {
       id: 1,
       img: spacetimeCard,
