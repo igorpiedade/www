@@ -1,9 +1,11 @@
+import { StaticImageData } from 'next/image'
+
 import Slider from './Slider'
 
 import spacetimeCard from '../../../public/assets/spacetime_card.png'
 import spacetimeMobileCard from '../../../public/assets/spacetimeMobile_card.png'
 import spacetimeAPICard from '../../../public/assets/spacetimeAPI_card.png'
-import { StaticImageData } from 'next/image'
+import notificationServiceCard from '../../../public/assets/notificationService_card.png'
 
 type slidesProp = {
   id: number
@@ -16,20 +18,26 @@ export default function Portifolio() {
   const slidesArray: slidesProp = [
     {
       id: 1,
-      img: spacetimeCard,
-      alt: 'spacetime sample image',
-      link: 'https://github.com/igorpiedade/spacetime_web',
+      img: notificationServiceCard,
+      alt: 'a card image showing insominia app interating with the application',
+      link: 'https://github.com/igorpiedade/notification-service',
     },
     {
       id: 2,
-      img: spacetimeMobileCard,
-      alt: 'spacetime mobile sample image',
-      link: 'https://github.com/igorpiedade/spacetime_mobile',
+      img: spacetimeCard,
+      alt: 'a card image with a screenshot of the web application spacetime',
+      link: 'https://github.com/igorpiedade/spacetime_web',
     },
     {
       id: 3,
+      img: spacetimeMobileCard,
+      alt: 'a card with a sample image of the mobile aplication from the spacetime project',
+      link: 'https://github.com/igorpiedade/spacetime_mobile',
+    },
+    {
+      id: 4,
       img: spacetimeAPICard,
-      alt: 'spacetime API sample image',
+      alt: 'a card image with a snippet code of the spacetime back-end',
       link: 'https://github.com/igorpiedade/spacetime_api',
     },
   ]

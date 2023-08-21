@@ -8,7 +8,7 @@ type Props = {
 export default function TechCard({ icon, caption }: Props) {
   return (
     <div className="flex h-36 w-36 flex-col overflow-clip rounded-b-3xl rounded-t-md bg-zinc-50 shadow-lg shadow-slate-400">
-      <div className="flex h-28  w-full  place-items-center justify-center">
+      <div className="flex h-28 w-full place-items-center justify-center">
         <Image
           src={icon}
           alt=""
