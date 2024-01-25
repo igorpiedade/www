@@ -18,7 +18,7 @@ export default function Stack() {
         <h1 className="mb-5 text-center font-logo text-3xl text-zinc-800">
           Stack
         </h1>
-        <div className="m-10 grid grid-cols-6 place-items-center gap-4">
+        <div className="m-10 grid grid-cols-3 place-items-center gap-2  md:grid-cols-6 md:gap-4">
           <TechCard icon={javascriptIcon} caption="Javascript" />
           <TechCard icon={nodejsIcon} caption="Node.JS" />
           <TechCard icon={reactIcon} caption="React.JS" />
